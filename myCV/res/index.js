@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
           "icon": "https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_960_720.jpg",
           "email": "diazhoyamaikol@gmail.com",
           "phoneNumber": "3103129835",
-          "description": "i'm a young software developer"
+          "description": "I'm a young software developer wanting to eat the world, I want to put myself to the test in this technological world"
         },
         {
           "idCV": 2,
@@ -21,16 +21,17 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let cardsContainer = document.getElementById('cards');
     json.forEach(e => {
         debugger;
-        let chield = `<div name="card" class="card-box">
-            <div class="card-container">
-                <img src="${e.icon}" alt="avatar" class="card-img">
-            </div>
-            <div class="card-container">
-                <h3><b id="cardName">${e.fullName}</b></h4>
-                <p5>${e.email}</h5>
-                <p id="cardDescription">${e.description}</p>
-            </div>
-        </div>`;
-        cardsContainer.insertAdjacentHTML("afterbegin",chield)
+        let chield = `
+        <div class="card" style="width: 18rem;">
+    <img src="${e.icon}" class="card-img-top" alt="avatar">
+    <div class="card-body">
+        <h5 class="card-title">${e.fullName}</h5>
+        <p class="card-text"><small class="text-muted">${e.email}</small></p>
+        <p class="card-text">${e.description}</p>
+        <a href="#" class="btn btn-primary">see more</a>
+    </div>
+      </div>`;
+        cardsContainer.insertAdjacentHTML("afterbegin", chield)
     });
+
 })
