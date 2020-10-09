@@ -7,6 +7,7 @@ namespace myCV.Context{
         }
 
         public DbSet<CurriculumVitae> CurriculumVitae { get; set; }
+        
     }
 
 }

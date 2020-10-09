@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using myCV.Models;
+using myCV.Context;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace myCV.Controllers
 {
@@ -9,30 +12,27 @@ namespace myCV.Controllers
     [Route("api/[controller]")]
     public class CVController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<CurriculumVitae> Get() => GetCurriculumVitaes();
-        public IEnumerable<CurriculumVitae> GetCurriculumVitaes()
+        public CVController(AppDbContext context)
         {
-            return new List<CurriculumVitae>(){
-            new CurriculumVitae()
-            {
-                IdCV = 1,
-                FullName = "Maikol Diaz Hoya",
-                PhoneNumber = "3103129835",
-                Email = "diazhoyamaikol@gmail.com",
-                Icon = "https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_960_720.jpg",
-                Description = "i'm a young software developer"
-            },
-            new CurriculumVitae()
-            {
-                IdCV = 2,
-                FullName = "David Botero",
-                PhoneNumber = "123456789",
-                Email = "davidbotero@gmail.com",
-                Icon = "https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_960_720.jpg",
-                Description = "i'm a young student"
-            }
-            };
+            _context = context;
+        }
+        private readonly AppDbContext _context;
+        [HttpGet]
+        public IEnumerable<CurriculumVitae> Get() {
+            return _context.CurriculumVitae.OrderBy(x => x.IdCV);
+        }
+
+        [HttpGet("{id}")]
+        public CurriculumVitae GetCurriculum([FromRoute]int id){
+            return _context.CurriculumVitae.FirstOrDefault(x => x.IdCV == id);
+        }
+
+        [HttpPost]
+        public ActionResult<CurriculumVitae> Post([FromBody]CurriculumVitae curriculum)
+        {
+            var result = _context.CurriculumVitae.Add(curriculum);
+            _context.SaveChanges();
+            return new ObjectResult(new { id = result.Entity.IdCV}) {StatusCode = 200}; //CreatedAtAction(nameof(CurriculumVitae), new { id = result.Entity.IdCV});
         }
     }
 }

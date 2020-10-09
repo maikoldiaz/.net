@@ -1,6 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace myCV.Models
 {
     public class CurriculumVitae{
+        [Key]
         public int IdCV { get; set; }
         public string FullName { get; set; }
         public string Icon { get; set; }

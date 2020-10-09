@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rhyu0Bg8ZJKJp+kKvpj5R170Mm0AA+EKTuWUzScett9QMWQjq9yMM8nVIaywSxPXJn4k81+UcmUjGJ16up98mg==",
+  "dgSpecHash": "NrD4uliWAf6bfg+Bd4TGh9Sm/2f73j1L8PZMqiYtrE9/R1zKPOh+yLRxxeIEv+/mo9+pkJv6GD7bx0UIexo1Tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\netCore\\myCV\\myCV.csproj",
+  "projectFilePath": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\.net\\myCV\\myCV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MaikolDiaz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MaikolDiaz\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

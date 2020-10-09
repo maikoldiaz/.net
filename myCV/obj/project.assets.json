@@ -5676,11 +5676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\netCore\\myCV\\myCV.csproj",
+      "projectUniqueName": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\.net\\myCV\\myCV.csproj",
       "projectName": "myCV",
-      "projectPath": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\netCore\\myCV\\myCV.csproj",
+      "projectPath": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\.net\\myCV\\myCV.csproj",
       "packagesPath": "C:\\Users\\MaikolDiaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\netCore\\myCV\\obj\\",
+      "outputPath": "C:\\Users\\MaikolDiaz\\Documents\\maikol\\.net\\myCV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -15,8 +15,26 @@ document.addEventListener('DOMContentLoaded', (e) => {
           "icon": "https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_960_720.jpg",
           "email": "davidbotero@gmail.com",
           "phoneNumber": "123456789",
-          "description": "i'm a young student"
-        }
+          "description": "i'm a young student"  
+        },
+        {
+          "idCV": 3,
+          "fullName": "Daniela riaño",
+          "icon": "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
+          "email": "riañodaniela@gmail.com",
+          "phoneNumber": "3226223147",
+          "description": "I am a exelent nutritionist student",
+          "profession": "Nutritionist"
+      },
+      {
+        "idCV": 4,
+        "fullName": "Ares Diaz",
+        "icon": "https://cdn.pixabay.com/photo/2016/04/22/06/19/dogs-1345211_960_720.jpg",
+        "email": "aresdiaz@gmail.com",
+        "phoneNumber": "325478963",
+        "description": "I am a crazy dog",
+        "profession": "dog"
+    }
       ]`);
     let cardsContainer = document.getElementById('cards');
     json.forEach(e => {
