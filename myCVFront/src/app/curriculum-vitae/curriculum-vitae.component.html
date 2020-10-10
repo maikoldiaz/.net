@@ -1,0 +1,12 @@
+<div *ngFor="let cv of curriculums" class="card-container">
+    <mat-card class="card">
+        <img mat-card-img src={{cv.icon}} class="card-img-top" alt={{cv.fullName}}>
+        <mat-card-content>
+            <p class="card-text"><strong>{{ cv.fullName }} </strong></p>
+            <p class="card-text">{{ cv.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" class="btn-card">see more</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

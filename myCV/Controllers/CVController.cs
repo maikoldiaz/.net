@@ -4,6 +4,7 @@ using myCV.Models;
 using myCV.Context;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 
 namespace myCV.Controllers
 {
@@ -17,6 +18,7 @@ namespace myCV.Controllers
             _context = context;
         }
         private readonly AppDbContext _context;
+
         [HttpGet]
         public IEnumerable<CurriculumVitae> Get() {
             return _context.CurriculumVitae.OrderBy(x => x.IdCV);

@@ -23,10 +23,18 @@ namespace myCV
         }
 
         public IConfiguration Configuration { get; }
+        readonly string AnotherPolicy = "AnotherPolicy";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o =>
+            {
+                o.AddPolicy(name : AnotherPolicy, builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
             services.AddControllers();
         }
@@ -42,6 +50,8 @@ namespace myCV
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(AnotherPolicy);
 
             app.UseAuthorization();
 

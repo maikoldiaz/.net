@@ -60,8 +60,8 @@ C:\Users\MaikolDiaz\Documents\maikol\netCore\myCV\obj\Debug\netcoreapp3.1\myCV.d
 C:\Users\MaikolDiaz\Documents\maikol\netCore\myCV\obj\Debug\netcoreapp3.1\myCV.pdb
 C:\Users\MaikolDiaz\Documents\maikol\netCore\myCV\obj\Debug\netcoreapp3.1\myCV.genruntimeconfig.cache
 C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\myCV.exe
 C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\myCV.deps.json
 C:\Users\MaikolDiaz\Documents\maikol\.net\myCV\bin\Debug\netcoreapp3.1\myCV.runtimeconfig.json
